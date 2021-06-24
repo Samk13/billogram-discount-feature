@@ -5,8 +5,7 @@
 - Make sure you have Docker installed and running on your machine
 - run:
   ```bash
-      docker build -t <nameYourApp> .
-      docker run --publish 3000:3000 <nameYourApp>
+      docker-compose up --build
   ```
 
 ## Feature design task
