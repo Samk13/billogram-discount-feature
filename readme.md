@@ -29,8 +29,7 @@ APIs – anything HTTP based
 - Data validation – how and for what data
 - Async communication
 - Authentication
-  Scalability is important for this business developer so this system is built with a micro
-  service architecture. Below is a list of use cases, most of which are already implemented.
+  Scalability is important for this business developer so this system is built with a micro service architecture. Below is a list of use cases, most of which are already implemented.
   Your task is to design the feature of getting a discount code. The user stories for this
   feature are listed below. You may imagine the surrounding system as whatever you
   would like in terms of communication, data storages, etc. to support your feature.
@@ -58,12 +57,12 @@ tech, not trying to build a new business. :)
 
 ## User stories - Get discount code
 
-As a brand I want to have discount codes generated for me so that I don’t have to deal
-with this administration myself.
-As a logged in user I want to be able to get a discount code so that I can get a discount
-on a purchase.
-As a brand I want to be notified about a user getting a discount code so that I can
-process information about the user for my loyalty programme.
+- As a brand I want to have discount codes generated for me so that I don’t have to deal
+  with this administration myself.
+- As a logged in user I want to be able to get a discount code so that I can get a discount
+  on a purchase.
+- As a brand I want to be notified about a user getting a discount code so that I can
+  process information about the user for my loyalty programme.
 
 ## Programming task
 

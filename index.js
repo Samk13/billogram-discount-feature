@@ -1,38 +1,19 @@
 'use strict';
 const express = require('express');
+const { router } = require('./src/routes/router');
+
+
+const { swaggerOptions } = require("./src/config/swagger-config");
 const swaggerUI = require('swagger-ui-express');
 const swaggerJsDoc = require('swagger-jsdoc');
-
-const { router } = require('./src/router/router');
-
-const swaggerOptions = {
-  apis: ['./src/router/*.js'],
-  definition: {
-    openapi: '3.0.0',
-    info: {
-      title: 'Billogram discount code API',
-      contact: {
-          email: "samarbid13@gmail.com",
-      },
-      version: '1.0.0',
-      description: 'A simple Express API that generate disount codes',
-    },
-    servers: [
-      {
-        url: 'http://localhost:3000',
-      },
-    ],
-  },
-};
 const specs = swaggerJsDoc(swaggerOptions)
 
-const port = process.env.PORT || 3000;
 const app = express();
 app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs))
 
+const port = process.env.PORT || 3000;
 // to access url encoded request to read the arguments easily
-app
-  .use(
+app.use(
     express.urlencoded({
       extended: true,
     })
@@ -47,7 +28,6 @@ app.get('/', (req, res) => {
 });
 
 // redirect
-
 app.use((req, res) => {
   res.redirect('/');
 });

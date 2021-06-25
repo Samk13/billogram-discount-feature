@@ -1,24 +1,24 @@
 const express = require('express');
+const brandController = require("../api/controllers/brand-controller")
 
 const router = express.Router();
 
 /**
  * @swagger
  * components:
- *      schemas:
-*           code:
-*               type: object
-*               required:
-*                   - id
-*                   - code
-*               properties:
-*                   id:
-*                   type: string
-*                   description: the auto-generated id of the discount code
-                example:
-                    id: jh2342jklh3
-                    code: brandjh2342jklh3
- *
+ *     schemas:
+*          code:
+*              type: object
+*              required:
+*                  - id
+*                  - code
+*              properties:
+*                  id:
+*                  type: string
+*                  description: the auto-generated id of the discount code
+*              example:
+*                  id: jh2342jklh3
+*                  code: brandjh2342jklh3
  */
 
 /**
@@ -45,10 +45,7 @@ const router = express.Router();
  *          items:
  *              @ref: "#/component/schema/codes"
  */
-router.get('/', (req, res) => {
-    res.json({data: "hello! from the api"})
-    // res.sendFile('../pages/home.html',{root: __dirname})
-})
+router.get('/', brandController.brand_greeting)
 
 router.get('/client', (req, res) => {
     res.json({
