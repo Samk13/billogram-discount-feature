@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <title>Billogram Home</title>
 </head>
-<body>
-    <div>
-        <h1>
-            Billogram code test
-        </h1>
+<body class="container m-auto bg-gray-800 text-gray-200 text-xl">
+    <h1 class="text-center p-10 text-2xl capitalize font-semibold">
+        Billogram discount service
+    </h1>
+    <div class="flex items-center justify-around h-16">
         <div>
-            <a href="http://localhost:3000/api/" >Got to API</a>
+            <a class="hover:bg-green-200 transition-all duration-300 p-5 rounded-lg hover:text-gray-800" href="http://localhost:3000/api/" >API</a>
         </div>
-        <div>
-            <a href="http://localhost:3000/api-docs/" >API Documentation</a>
+        <div >
+            <a class="hover:bg-green-200 transition-all duration-300 p-5 rounded-lg hover:text-gray-800" href="http://localhost:3000/api-docs/" >API documentation</a>
         </div>
     </div>
 </body>
