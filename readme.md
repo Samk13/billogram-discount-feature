@@ -13,12 +13,8 @@
 We want you to plan and design an implementation of a feature in an existing system.
 We would like you to present your schematics at our next meeting, take us through your
 thought process and motivate your choices. Mode of presentation is up to you; draw on a
-whiteboard (consider the meeting location though - to be honest we don’t really
-recommend virtual whiteboards), make a presentation or use any other medium you
-prefer.
-To try to scope the task somewhat, we have picked a few aspects of system design that
-we want to hear more about. If there are aspects mentioned that you have not got as
-much experience with, that is all right – just focus on the areas where you feel more
+whiteboard (consider the meeting location though - to be honest we don’t really recommend virtual whiteboards), make a presentation or use any other medium you prefer.
+To try to scope the task somewhat, we have picked a few aspects of system design that we want to hear more about. If there are aspects mentioned that you have not got as much experience with, that is all right – just focus on the areas where you feel more
 comfortable.
 
 ## The aspects
@@ -30,18 +26,12 @@ APIs – anything HTTP based
 - Async communication
 - Authentication
   Scalability is important for this business developer so this system is built with a micro service architecture. Below is a list of use cases, most of which are already implemented.
-  Your task is to design the feature of getting a discount code. The user stories for this
-  feature are listed below. You may imagine the surrounding system as whatever you
-  would like in terms of communication, data storages, etc. to support your feature.
-  Remember that there is no right or wrong here; we want to understand your tech choices
-  and your thought process.
+  Your task is to design the feature of getting a discount code. The user stories for this feature are listed below. You may imagine the surrounding system as whatever you would like in terms of communication, data storages, etc. to support your feature.
+  Remember that there is no right or wrong here; we want to understand your tech choices and your thought process.
 
 ## The business case
 
-We want to build a service for discount codes. The idea is that a brand can create their
-own page in our marketplace where they can make discount codes available. As a user
-of our market place you create an account and in exchange for the discount codes you
-agree to share your contact information with the brand you got the code from. The vision
+We want to build a service for discount codes. The idea is that a brand can create their own page in our marketplace where they can make discount codes available. As a user of our market place you create an account and in exchange for the discount codes you agree to share your contact information with the brand you got the code from. The vision
 is to be the one stop solution for loyalty programmes.
 Focus functionality on the user who is there to get discount codes. The product
 description is vague on purpose so you can make your own choices. We are interested in
